@@ -1,0 +1,24 @@
+{
+  "name": "eserciziJS",
+  "version": "1.0.0",
+  "main": "Esercizi04.12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrealavi/eserciziJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Andrealavi/eserciziJS/issues"
+  },
+  "homepage": "https://github.com/Andrealavi/eserciziJS#readme",
+  "description": ""
+}

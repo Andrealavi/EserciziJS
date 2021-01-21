@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Esercizi </title>
+    </head>
+
+    <body>
+        <p> Ciao </p>
+
+        <script src="utils.js"></script>
+        <script>
+            
+            let minimo
+            let massimo
+
+            do {
+                minimo = Number(prompt("Inserisci il valore minimo: "))
+                massimo = Number(prompt("Inserisci il valore massimo: "))
+            } while (minimo > massimo);
+            
+            let numero = inserisciIntero(minimo, massimo)
+
+            while (numero < 0) {
+                alert("Inserire nuovamente il numero")
+                numero = inserisciIntero(minimo, massimo)
+            }
+
+            let valori = chiediValori(minimo, massimo, numero)
+            console.log(valori)
+
+            alert(contaValori(minimo, massimo, valori, pari = true))
+            
+            let array = []
+            for (let i = 0; i < valori.length; i++) {
+                if (i > (minimo+massimo)/2) array.push(valori[i])
+            }
+            console.log(array)
+            alert(media(array))
+        
+        </script>
+    </body>
+</html>

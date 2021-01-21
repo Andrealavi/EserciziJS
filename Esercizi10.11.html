@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Esercizi </title>
+    </head>
+
+    <body>
+        <p> Ciao </p>
+
+        <script src="Esercizi10.11.js"></script>
+        <script>
+        
+        
+            const minimo = -50
+            const massimo = 50
+
+            let valori = []
+
+            for (let i = 0; i<10; i++){
+                valori.push(inserisciIntero(minimo, massimo))
+            }
+
+            alert(Math.max(...valori))
+
+            alert("I numeri pari sono presenti al " + percentuale(valori, true) + "%")
+
+            const n = inserisciIntero(-Infinity, +Infinity, "Inserisci un valore: ")
+
+            let sequenzaN = []
+
+            for (let i = 0; i<n; i++){
+                sequenzaN.push(inserisciIntero(40, 120))
+            }
+
+            alert(contaValori(sequenzaN, dispari = true))
+            alert(contaPrimi(valori))
+
+            let sequenza =  chiediValori()
+
+            for (let i = 0; i < sequenza.length; i++) {
+                isPerfetto(sequenza[i]) ? alert(sequenza[i] + " e' un valore perfetto") : alert(sequenza[i] + " non e' perfetto")
+            }
+
+
+
+        
+        </script>
+    </body>
+</html>
