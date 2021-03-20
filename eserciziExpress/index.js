@@ -7,8 +7,6 @@ const app = express()
 const usersRepository = path.join(__dirname, './utenti.json')
 const utenti = JSON.parse(fs.readFileSync(usersRepository, 'utf-8'))
 
-// localhost:3000/users/login?username=andrea&password=puzza
-
 app.get("/users/login", (req, res) => {
     const {username, password} = req.query
     const credenziali = {
